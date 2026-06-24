@@ -807,6 +807,7 @@
             summary: `🚨 Found ${flaggedAccs.length} account(s) paid via both ${labelA} and ${labelB}`
           };
         }
+        self.runConflictCheck = runConflictCheck;
 
         // 7. Migrated Legacy checks (DCRG, Medical, Holidays, FVC threshold, Cross-DDO)
         function run_dcrg_payments(records) {
